@@ -3,8 +3,14 @@ package appointment
 import (
 	"time"
 
-	"github.com/geraldofigueiredo/cadastro-ccz/pkg/animal"
 	"github.com/geraldofigueiredo/cadastro-ccz/pkg/user"
+)
+
+type DayShift string
+
+const (
+	Matutino   DayShift = "Matutino"
+	Vespertino DayShift = "Vespertino"
 )
 
 type Appointment struct {
@@ -12,11 +18,15 @@ type Appointment struct {
 	Reserved   *time.Time
 	Day        time.Time
 	Shift      DayShift
-	AnimalType animal.AnimalType
+	AnimalType AnimalType
 	AnimalName *string
 	User       user.User
 
 	CreatedAt time.Time
 	UpdatedAt time.Time
 	DeletedAt *time.Time
+}
+
+func (Appointment) TableName() string {
+	return "appointment"
 }
