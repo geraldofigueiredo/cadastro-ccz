@@ -3,7 +3,7 @@ package appointment
 import (
 	"time"
 
-	"github.com/geraldofigueiredo/cadastro-ccz/pkg/user"
+	"github.com/geraldofigueiredo/cadastro-ccz/internal/domains/user"
 )
 
 type DayShift string
