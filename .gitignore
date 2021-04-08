@@ -3,3 +3,5 @@ cadastro-ccz
 CADASTRO-CCZ
 *.env
 config.yml
+dev.yml
+prod.yml
