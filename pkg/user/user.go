@@ -5,9 +5,9 @@ import "time"
 type UserType string
 
 const (
-	ADM   UserType = "ADM"
-	ONG   UserType = "ONG/PROTETOR(a)"
-	Civil UserType = "Civil"
+	Adm   UserType = "ADM"
+	Ong   UserType = "ONG/PROTETOR(a)"
+	Civil UserType = "CIVIL"
 )
 
 type User struct {
