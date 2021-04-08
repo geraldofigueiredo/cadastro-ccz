@@ -2,3 +2,4 @@ build
 cadastro-ccz
 CADASTRO-CCZ
 *.env
+config.yml
