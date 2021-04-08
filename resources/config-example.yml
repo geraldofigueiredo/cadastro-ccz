@@ -1,0 +1,5 @@
+database:
+  connectionUri: "valid_connection_uri"
+
+server:
+  port: 8080
