@@ -16,7 +16,9 @@ const (
 type Appointment struct {
 	ID         int
 	Reserved   *time.Time
-	Day        time.Time
+	Day        uint
+	Month      uint
+	Year       uint
 	Shift      DayShift
 	AnimalType AnimalType
 	AnimalName *string

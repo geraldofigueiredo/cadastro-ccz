@@ -19,9 +19,8 @@ const (
 type User struct {
 	ID        int
 	Name      string
-	CPF       int
-	Phone     string
-	BirhtDate time.Time
+	CPF       string
+	BirthDate time.Time
 	Type      UserType
 	Gender    UserGender
 
