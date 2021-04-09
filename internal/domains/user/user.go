@@ -3,6 +3,7 @@ package user
 import "time"
 
 type UserType string
+type UserGender string
 
 const (
 	Adm   UserType = "ADM"
@@ -10,12 +11,25 @@ const (
 	Civil UserType = "CIVIL"
 )
 
+const (
+	Male   UserGender = "MALE"
+	Female UserGender = "FEMALE"
+)
+
 type User struct {
-	ID    int
-	Name  string
-	CPF   int
-	Phone string
-	Type  UserType
+	ID        int
+	Name      string
+	CPF       int
+	Phone     string
+	BirhtDate time.Time
+	Type      UserType
+	Gender    UserGender
+
+	Phone1   string
+	Phone2   string
+	Email    string
+	Address  Address
+	Password string
 
 	CreatedAt time.Time
 	UpdatedAt time.Time
